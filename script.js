@@ -186,7 +186,7 @@ saveBtn.addEventListener('click', () => {
 });
 
 copyAllBtn.addEventListener('click', () => {
-  copy(colors.join(', '), 'All colours copied');
+  copy(colors.map(formatColor).join(', '), 'All colours copied');
 });
 
 clearSaved.addEventListener('click', () => {

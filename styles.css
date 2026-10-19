@@ -7,11 +7,16 @@
   --radius: 18px;
 }
 
+[hidden] {
+  display: none !important;
+}
+
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: radial-gradient(800px 500px at 50% -10%, rgba(140, 120, 255, 0.1), transparent 60%), var(--bg);
+  background: radial-gradient(800px 500px at 50% -10%, rgba(148, 163, 184, 0.1), transparent 60%), var(--bg);
   color: var(--text);
   min-height: 100vh;
   display: grid;
@@ -115,10 +120,10 @@ h1, h2 { font-family: 'Sora', sans-serif; }
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
-.btn.primary { background: linear-gradient(135deg, #8c78ff, #ff6bcb); color: #fff; }
-.btn.primary:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(140, 120, 255, 0.4); }
+.btn.primary { background: linear-gradient(135deg, #94a3b8, #f472b6); color: #fff; }
+.btn.primary:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(148, 163, 184, 0.4); }
 .btn.ghost { background: var(--panel); border: 1px solid var(--border); color: var(--text); }
-.btn.ghost:hover { transform: translateY(-2px); border-color: #8c78ff; }
+.btn.ghost:hover { transform: translateY(-2px); border-color: #94a3b8; }
 
 .hint { color: var(--muted); font-size: 0.8rem; margin-bottom: 34px; }
 .hint kbd { background: var(--panel); border: 1px solid var(--border); border-radius: 5px; padding: 1px 7px; font-family: 'Sora', monospace; font-size: 0.75rem; }
@@ -127,7 +132,7 @@ h1, h2 { font-family: 'Sora', sans-serif; }
 .saved-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
 .saved-head h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
 .saved-head button { background: none; border: none; color: var(--muted); font-family: inherit; font-size: 0.8rem; cursor: pointer; }
-.saved-head button:hover { color: #ff6bcb; text-decoration: underline; }
+.saved-head button:hover { color: #f472b6; text-decoration: underline; }
 
 .saved-list { display: flex; flex-direction: column; gap: 12px; }
 
@@ -150,8 +155,8 @@ h1, h2 { font-family: 'Sora', sans-serif; }
   cursor: pointer;
   transition: all 0.2s;
 }
-.icon-btn:hover { color: var(--text); border-color: #8c78ff; }
-.icon-btn.del:hover { color: #ff6bcb; border-color: #ff6bcb; }
+.icon-btn:hover { color: var(--text); border-color: #94a3b8; }
+.icon-btn.del:hover { color: #f472b6; border-color: #f472b6; }
 
 .saved-empty { color: var(--muted); font-size: 0.86rem; text-align: center; padding: 24px 0; }
 
