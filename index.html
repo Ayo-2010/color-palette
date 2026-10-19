@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palette Studio</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="studio">
+  <header class="head">
+    <div>
+      <h1>Palette Studio</h1>
+      <p>Generate, lock and save colour combinations.</p>
+    </div>
+    <div class="format-toggle">
+      <button class="fmt is-active" data-format="hex">HEX</button>
+      <button class="fmt" data-format="rgb">RGB</button>
+    </div>
+  </header>
+
+  <div class="palette" id="palette"></div>
+
+  <div class="actions">
+    <button class="btn primary" id="generateBtn">Generate</button>
+    <button class="btn ghost" id="saveBtn">Save palette</button>
+    <button class="btn ghost" id="copyAllBtn">Copy all</button>
+  </div>
+
+  <p class="hint">Press <kbd>Space</kbd> to generate a new palette · click a colour to copy it</p>
+
+  <section class="saved">
+    <div class="saved-head">
+      <h2>Saved palettes</h2>
+      <button id="clearSaved">Clear all</button>
+    </div>
+    <div class="saved-list" id="savedList"></div>
+    <p class="saved-empty" id="savedEmpty">No saved palettes yet.</p>
+  </section>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
