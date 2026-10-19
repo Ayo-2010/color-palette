@@ -120,7 +120,7 @@ h1, h2 { font-family: 'Sora', sans-serif; }
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
-.btn.primary { background: linear-gradient(135deg, #94a3b8, #f472b6); color: #fff; }
+.btn.primary { background: linear-gradient(135deg, #64748b, #db2777); color: #fff; }
 .btn.primary:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(148, 163, 184, 0.4); }
 .btn.ghost { background: var(--panel); border: 1px solid var(--border); color: var(--text); }
 .btn.ghost:hover { transform: translateY(-2px); border-color: #94a3b8; }
